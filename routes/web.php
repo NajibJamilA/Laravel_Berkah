@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/form', 'BukuControler@inputfield');
+Route::post('/form/input-process','BukuControler@inputprocess');
